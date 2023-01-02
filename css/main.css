@@ -364,6 +364,12 @@ img {
   border-bottom: 1px solid #ECECEC;
   background-color: #FFFFFF;
 }
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 .header-page {
   display: flex;
@@ -379,6 +385,8 @@ img {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-decoration: none;
 }
 @media screen and (min-width: 1200px) {
@@ -466,6 +474,8 @@ img {
     flex-direction: row;
     align-items: flex-end;
     margin-right: 0;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 .contakt__item {
@@ -495,7 +505,7 @@ img {
   background-color: #2F303A;
   max-width: 1600px;
   height: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/origphoto/Headermobile.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/imgmob1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -504,28 +514,28 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/origphoto/Headermobile2x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/imgmob2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/origphoto/Headertablet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/imgtablet1x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/origphoto/Headertablet2x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/imgtablet2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/origphoto/hederdesk.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/imgdesk1x.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/origphoto/headerdesk2x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/imgdesk2x.jpg");
   }
 }
 .hero__demo > .hero__title-hero {
@@ -539,6 +549,11 @@ img {
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__demo > .hero__title-hero {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__demo > .hero__title-hero {
@@ -921,6 +936,7 @@ img {
 @media screen and (min-width: 768px) {
   .subscribe {
     margin: 0 auto;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -950,7 +966,7 @@ img {
   display: block;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .subscribe__search-form {
     width: 100%;
     display: flex;
@@ -971,10 +987,15 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 20px;
+  padding-left: 16px;
 }
 @media screen and (min-width: 768px) {
   .subscribe__footer-input {
-    width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__footer-input {
     display: flex;
     margin: 0 auto;
     margin-right: 12px;
@@ -1076,15 +1097,35 @@ img {
 }
 
 .section-portfolio {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .section-portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 8px;
   margin-bottom: 50px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-basis: calc(100% - 8px);
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 8px;
+    margin-bottom: 50px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-basis: calc(100% - 8px);
+  }
 }
 .filter__item .button:hover, .filter__item .button:focus {
   color: #FFFFFF;
@@ -1092,19 +1133,20 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .filter__item + .filter__item {
-  margin-left: 8px;
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .filter__item + .filter__item {
+    margin-left: 8px;
+  }
 }
 
 .project {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
   gap: 30px;
 }
-.project__item {
-  width: calc((100% - 60px) / 3);
-}
-.project__facility {
+.project__facility .link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1451,7 +1493,7 @@ label {
 }
 
 .menu-tuggle.js-open-menu {
-  display: inline-block;
+  display: block;
   width: 40px;
   height: 40px;
   text-align: center;
@@ -1507,6 +1549,7 @@ label {
 
 .menu-item-link {
   font-family: Roboto;
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.17px;
   text-align: center;
@@ -1525,6 +1568,7 @@ label {
 }
 
 .contakt-authinfo {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   text-align: left;
@@ -1533,6 +1577,7 @@ label {
 }
 
 .contact-auth-tel {
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -1563,6 +1608,7 @@ label {
 }
 
 .net-link {
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;

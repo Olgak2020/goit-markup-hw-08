@@ -126,8 +126,9 @@
      
   @media screen and(min-width:768px) {
           margin: 0 auto; 
-          
+          text-align: center;
    }
+
 
   @media screen and(min-width:1200px){
            width: 570px;
@@ -165,7 +166,7 @@
     margin:0 auto ;
 
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1200px) {
         
         width: 100%;
         display: flex;
@@ -173,6 +174,10 @@
 
 
     }
+
+
+
+
    }
 
 &__footer-input {
@@ -189,13 +194,21 @@
     box-shadow: 0px 4px 4px 0px $colorshadow;
     transition:  $transition-border;
     margin-bottom:20px;
+    padding-left: 16px;
 
 
-    @media screen and (min-width:768px) {
+ @media screen and (min-width:768px) {
+         max-width:450px ;
+    
+    }
+
+
+
+    @media screen and (min-width:1200px) {
         
-        width: 100%;
+       
         display: flex;
-        margin:0 auto ;
+       margin: 0 auto;
         margin-right:12px;
 
     }
