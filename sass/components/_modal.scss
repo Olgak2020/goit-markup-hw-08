@@ -1,0 +1,231 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:$colorbackdrop;
+    border-radius: 4px;
+    opacity: 1;
+    transition: $transition-opacity, visibility 250ms var(--timimg-bezer);
+    overflow-y: scroll;
+
+}
+
+.modal {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(1);
+    max-width: 450px;
+    width:100% ;
+    height: 609px;
+    background-color:$colortitleprimary;
+    border-radius: 4px;
+    padding: 40px;
+    transition: $transition-transform;
+    box-shadow: 0px 2px 1px 0px $colorbackdrop,
+        0px 1px 1px 0px $colormodal-shadow,
+        0px 1px 3px 0px $colormodal-boxshodow;
+
+
+
+ @media screen and(min-width:1200px) {
+    max-width: 528px;
+   
+ }
+    
+ }
+
+
+
+        .modal-close {
+    position: absolute;
+    @extend %flexjustyaling;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px $colormodalbnt;
+    background-color: $colormodalbnt;
+    opacity: 1;
+    transition: $transition-fill;
+    cursor: pointer;
+}
+
+.modal .mailing-modal {
+    margin-bottom: 10px;
+}
+
+.modal .mailing-modal:nth-child(4) {
+    margin-bottom: 20px;
+}
+.modal .primary-button {
+    display: block;
+    min-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.modal-close .modal-close-back:focus,
+.modal-close .modal-close-back:hover {
+    fill: $coloraccent;
+
+
+}
+
+
+.mailing-list {
+    width: 100%;
+
+
+}
+
+.mailing-text {
+    font-size: 12px;
+    line-height: 1.16em;
+    color:$colortext ;
+
+@media screen and(min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71em;
+    }
+
+
+}
+
+
+.mailing-input {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    
+    font-size: 12px;
+    line-height: 1.16em;
+
+    color: $colortext;
+   
+    border: 1px solid $colorinputborder;
+    border-radius: 4px;
+    transition: $transition-border;
+
+}
+
+.mailing-comment {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+
+    font-size: 12px;
+    line-height: 1.16em;
+
+    color: $colortext;
+    resize: none;
+    border: 1px solid $colorinputborder ;
+    border-radius: 4px;
+    transition: $transition-border;
+}
+
+.mailing-input:focus,
+.mailing-input:hover {
+    border-color: $coloraccent;
+    outline: transparent;
+}
+
+.mailing-input:focus+svg,
+.mailing-input:hover+svg {
+    fill: $coloraccent;
+}
+
+.mailing-modal textarea:focus,
+.mailing-modal textarea:hover {
+    border-color: $coloraccent;
+    outline: transparent;
+}
+
+
+.mailing-modal textarea::placeholder {
+    color:$colortextarea;
+}
+
+.icon-input {
+    position: relative;
+}
+
+.icon-form {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition:$transition-fill ;
+
+}
+
+
+.check-policy{
+    @extend %flexjustyaling;
+    margin-bottom: 30px;
+    width:100% ;
+
+    font-size: 12px;
+    line-height: 1.17em;
+    color:$colortext ;
+    
+     @media screen and(min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71em;
+    }
+
+    
+    
+    } 
+
+.checkbox-policy:checked+label>span {
+    border: none;
+    background-color:$coloraccent ;
+    background-image: url('../images/icon/Vectorlast.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: $transition-bg;
+}
+
+.mailing-agreement {
+    color:$coloraccent;
+    margin-left: 5px;
+}
+
+.check-policy-box {
+    width: 16px;
+    height: 15px;
+    border: 2px solid $colortitle;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+.mailing-title{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color:$colortitle;
+    margin-bottom:12px;
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleX(0);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

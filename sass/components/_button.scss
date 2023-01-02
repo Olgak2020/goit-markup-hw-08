@@ -1,0 +1,63 @@
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    min-width: 72px;
+    padding: 6px 22px;
+    vertical-align: Top;
+    border-radius: transparent;
+    color:$colortitle ;
+    background-color: $colorbg;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    transition: $transition-bg, $transition-boxshadow, $transition-color;
+}
+
+.button :hover,
+.button :focus {
+
+    color:$colortitleprimary ;
+    background-color: $coloraccent;
+    box-shadow: 0px 4px 4px 0px $colorshadow;
+}
+
+
+
+    .primary-button {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px 24px;
+    border-radius: 4px;
+    border-color: transparent;
+   
+    color: $colortitleprimary;
+    background:$coloraccent ;
+    font-family: inherit;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+   
+    text-align: center;
+    
+    box-shadow: 0px 0.4px 0.4px 0px $colorshadowbt;
+    transition: $transition-bg ,  $transition-boxshadow;
+    }
+
+.primary-button:hover,
+.primary-button:focus {
+    background: $coloraccentsecondary;
+    box-shadow: 0px 4px 4px 0px $colorshadow;
+
+}

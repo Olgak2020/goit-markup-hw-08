@@ -1,0 +1,62 @@
+.contakt {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+
+    @media screen and(max-width:767px) {
+        display: none;
+        
+    }
+
+    @media screen and (min-width:768px) {
+               
+    flex-direction: column;
+    align-items: flex-start;
+     }
+
+
+ @media screen and (min-width:1200px) {
+     flex-direction: row;
+     align-items: flex-end;
+     margin-right:0 ;
+
+ }
+
+
+&__item {
+    margin-left: 50px;
+}
+
+&__link {
+    padding: 32px 0;
+}
+ 
+&__authinfo {
+    @extend %flexaling;
+    justify-content: space-between;
+    
+    color:$colortext;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    transition:$transition-color;
+
+}
+
+
+&__authinfo:hover,
+&__authinfo:focus {
+    color:$coloraccent ;
+
+}
+
+
+&__header-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+}

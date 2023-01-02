@@ -1,0 +1,21 @@
+:root {
+    --common-gap: 94px;
+    --title-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+    --secondary-title-color: #000000;
+    --primary-bg-color: #F5F5F5;
+    --bg-color: #F5F4FA;
+    --secondary-bg-color: #2F303A;
+    --title-hero-color: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.25);
+    --timimg-bezer: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    box-sizing: border-box;
+    color:$colortext ;
+    font-family: Roboto, sans-serif;
+    /* background-color: var( --primary-bg-color);
+      */
+}

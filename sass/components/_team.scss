@@ -1,0 +1,156 @@
+.team {
+    padding-bottom: 60px;
+    padding-top: 60px ;
+    background-color: $colorbg;
+
+
+    @media screen  and(min-width:1200px)
+    {
+      padding-bottom: $commonpadding ;
+     
+    }
+
+
+   &__pre-title {
+     margin-bottom: 30px;
+
+     color: $colortitle ;
+     text-align: center;
+
+     font-weight: 700;
+     font-size: 28px;
+     line-height: 1.17;
+     letter-spacing: 0.03em;
+
+     vertical-align: Top;
+
+@media screen and(min-width:1200px) {
+  font-size: 36px;
+    
+  }
+
+
+ }
+      &__team-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+       
+@media screen and(min-width:768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-basis: calc(100% / 2);
+
+@media screen and (min-width:1200px){
+  flex-wrap: nowrap;
+  flex-basis: calc(100% / 4);
+  
+}
+
+   
+
+
+  }
+
+
+            }
+
+
+     &__team-list> &__card {
+   
+    align-items: center;
+     
+    
+  }
+
+
+
+     &__team-list> &__card:nth-child(4)   
+     {
+  margin-right: 0;
+
+
+ }
+
+    &__card {
+
+    
+    background-color: $colortitleprimary ;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px $colorshadow;
+
+
+
+
+}
+
+    &__card-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
+   &__team-text {
+    text-align: center;
+    margin-bottom: 16px;
+    @include font (null, 16px, 1.19, 0.03em);
+
+}
+
+  &__team-title {
+    margin-bottom: 10px;
+    text-align: center;
+    color: $colortitle ;
+    @include font (500, 16px, 1.19, 0.03em);
+
+
+}
+
+    &__action-social {
+@extend %flexjustyaling;
+
+}
+
+  &__social-list {
+    width: 44px;
+    height: 44px;
+   
+}
+
+  &__social-list:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+
+ &__social-item {
+    @extend %flexjustyaling;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+      
+    transition: $transition-bg;
+
+}
+
+    &__social-item:hover {
+     background-color: $coloraccent;
+    
+        }
+
+&__social-item:hover &__social-item-icon {
+    fill: $colortitleprimary;
+}
+
+
+
+
+ &__social-item-icon {
+   fill: $coloriconfill;
+   transition:$transition-fill ;
+ }
+
+}
+

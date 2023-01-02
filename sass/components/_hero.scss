@@ -1,0 +1,93 @@
+.hero {
+        background-color:$colorbgsecondary ;
+        max-width: 1600px;
+        height: auto;
+        background-image: linear-gradient($colorbackdrop,
+            $colorbgimage, $colorbgimage),
+        url('/images/origphoto/Headermobile.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+
+       background-image: linear-gradient($colorbackdrop,
+            $colorbgimage,
+            $colorbgimage),
+        url('/images/origphoto/Headermobile2x.jpg');
+              
+                }
+           
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           text-align: center;
+           padding:118px 0 ;
+  
+
+   @media screen  and(min-width:768px){
+
+    background-image: linear-gradient($colorbackdrop,
+    $colorbgimage, $colorbgimage),
+
+url('/images/origphoto/Headertablet.jpg');
+
+       @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+        background-image: linear-gradient($colorbackdrop,
+                $colorbgimage,  $colorbgimage),
+
+            url('/images/origphoto/Headertablet2x.jpg');
+    
+   }
+
+ }
+      @media screen  and (min-width:1200px){
+      padding:200px 0 ;
+      background-image: linear-gradient($colorbackdrop,
+      $colorbgimage,  $colorbgimage),
+      
+  url('/images/origphoto/hederdesk.jpg');
+
+     @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+
+      background-image: linear-gradient($colorbackdrop,
+                $colorbgimage, $colorbgimage),
+
+            url('/images/origphoto/headerdesk2x.jpg');
+
+    }
+
+      } 
+        
+    
+
+   &__demo > &__title-hero {
+
+    display: inline-block;
+    margin:0px 0px 30px;  
+    width: 100%;
+    
+    text-align: center;
+    color:$colortitleprimary ;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    
+    text-transform: uppercase;
+    
+    @media screen and (min-width:1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    
+    }
+
+}
+
+
+}

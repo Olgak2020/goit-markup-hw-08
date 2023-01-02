@@ -1,0 +1,89 @@
+
+.address {
+     display:block;
+     min-width: 232px;
+     text-align: center;
+     margin:0 auto ;
+
+    
+@media screen and(min-width:768px){
+    margin-bottom:60px;
+   
+}
+   
+@media screen and(min-width:1200px){
+    margin-bottom:0;
+    text-align: left;
+
+}
+ &__box {
+   font-style: normal;
+   font-weight: 400;
+ }
+
+&__link {
+    color: $colortitleprimary;
+    min-width: 232px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    transition: $transition-color ;
+
+}
+
+&__link:hover,
+&__link:focus {
+
+   color: $coloraccent ;
+}
+
+
+&__list {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+}
+
+&__info:hover,
+&__info:focus {
+    color: $coloraccent;
+
+}
+
+&__info {
+    transition: $transition-color;
+    color: $colorftborder;
+
+}
+
+
+&__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+
+}
+
+    &__logo-footer {
+        color: $colortitleprimary;
+    }
+
+
+    &__logo-web {
+        color: $coloraccent ;
+    }
+}
+
+
+    

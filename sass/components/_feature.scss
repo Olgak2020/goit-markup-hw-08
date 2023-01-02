@@ -1,0 +1,92 @@
+.specialty {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width:1200px) {
+       
+    padding-top:$commonpadding ;
+     padding-bottom: $commonpadding;
+     }
+  
+   
+
+&__feature {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+  @media screen and (min-width:768px){
+        
+    flex-direction: row;
+    flex-wrap: wrap;
+         
+
+      }
+
+  @media screen and (min-width:1200px) {
+    
+    flex-wrap: nowrap;
+   
+         }
+
+
+   
+}
+
+&__feature> &__item {
+
+  flex-basis: calc(100% / 4);
+
+  @media screen and (min-width:768px) {
+    
+  flex-basis: calc((100% - 30px) / 2);
+
+      }
+
+  @media screen and (min-width:1200px) {
+    
+   flex-basis: calc((100% - 60px) / 4);
+   
+         }
+ 
+
+
+}
+
+  &__feature-icon {
+    @extend %flexjustyaling;
+    height: 120px;
+    background-color: $colorbg;
+    margin-bottom: 30px;
+
+
+}
+
+
+  &__feature-title {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color:$colortitle ;
+    @include font(700, 14px, 1.14, 0.03em);
+  
+
+    text-transform: uppercase;
+    
+    @media screen and (min-width:768px) {
+    
+    justify-content: left;
+   
+         }
+
+
+}
+    &__feature-text {
+    @include font ( null, 14px, 1.71, 0.03em);
+        
+    color:$colortext;
+}
+
+}
