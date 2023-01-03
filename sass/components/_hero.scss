@@ -4,7 +4,7 @@
         height: auto;
         background-image: linear-gradient($colorbackdrop,
             $colorbgimage, $colorbgimage),
-        url('../images/hero/imgmob1x.jpg');
+        url('../images/imgmob1x.jpg');
 
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -13,7 +13,7 @@
        background-image: linear-gradient($colorbackdrop,
             $colorbgimage,
             $colorbgimage),
-        url('../images/hero/imgmob2x.jpg');
+        url('../images/imgmob2x.jpg');
               
                 }
            
@@ -29,7 +29,7 @@
     background-image: linear-gradient($colorbackdrop,
     $colorbgimage, $colorbgimage),
 
-url('../images/hero/imgtablet1x.jpg');
+url('../images/imgtablet1x.jpg');
 
        @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -38,7 +38,7 @@ url('../images/hero/imgtablet1x.jpg');
         background-image: linear-gradient($colorbackdrop,
                 $colorbgimage,  $colorbgimage),
 
-            url('../images/hero/imgtablet2x.jpg');
+            url('../images/imgtablet2x.jpg');
     
    }
 
@@ -48,7 +48,7 @@ url('../images/hero/imgtablet1x.jpg');
       background-image: linear-gradient($colorbackdrop,
       $colorbgimage,  $colorbgimage),
       
-  url('../images/hero/imgdesk1x.jpg');
+  url('../images/imgdesk1x.jpg');
 
      @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -57,7 +57,7 @@ url('../images/hero/imgtablet1x.jpg');
       background-image: linear-gradient($colorbackdrop,
                 $colorbgimage, $colorbgimage),
 
-            url('../images/hero/imgdesk2x.jpg');
+            url('../images/imgdesk2x.jpg');
 
     }
 
