@@ -535,7 +535,7 @@ img {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/imgdesk2x.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/Imgdesk2x.jpg");
   }
 }
 .hero__demo > .hero__title-hero {
