@@ -63,9 +63,7 @@ url('../images/imgtablet1x.jpg');
 
       } 
         
-    
-
-   &__demo > &__title-hero {
+      &__demo > &__title-hero{
 
     display: inline-block;
     margin:0px 0px 30px;  
@@ -78,8 +76,8 @@ url('../images/imgtablet1x.jpg');
     letter-spacing: 0.06em;
     
     text-transform: uppercase;
-
-@media screen and (min-width:768px) {
+   
+    @media screen and (min-width:768px) {
         width: 360px;
            }
 
@@ -95,3 +93,19 @@ url('../images/imgtablet1x.jpg');
 
 
 }
+
+// &__demo > &__title-hero {
+
+//     margin: 0 auto 30px;
+//     width: 696px;
+//     text-align: center;
+//     color:$colortitleprimary ;
+
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     letter-spacing: 0.06em;
+    
+//     text-transform: uppercase;
+
+// }
