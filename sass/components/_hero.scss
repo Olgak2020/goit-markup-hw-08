@@ -48,7 +48,7 @@ url('../images/imgtablet1x.jpg');
       background-image: linear-gradient($colorbackdrop,
       $colorbgimage,  $colorbgimage),
       
-  url('../images/imgdesk1x.jpg');
+  url('../images/hero/imgdesk1x.jpg');
 
      @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -57,7 +57,7 @@ url('../images/imgtablet1x.jpg');
       background-image: linear-gradient($colorbackdrop,
                 $colorbgimage, $colorbgimage),
 
-            url('../images/imgdesk2x.jpg');
+            url('../images/hero/imgdesk2x.jpg');
 
     }
 
