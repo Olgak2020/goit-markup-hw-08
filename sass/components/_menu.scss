@@ -8,7 +8,7 @@
     background-color: $colortitleprimary;
     transform: translateX(100%);
     z-index:1 ;
-
+    
 }
 
 .menu-container.is-open {
@@ -79,7 +79,7 @@
   height:100%;
   display:block;
   text-align:left;
-   
+
  
 }
 
@@ -104,6 +104,8 @@ font-family: Roboto;
  vertical-align:top; 
  letter-spacing:0.02em;
  color:$colortitle ;
+transition: $transition-color;
+
 
 }
 .menu-item-link.current{
@@ -123,6 +125,8 @@ line-height:1.17;
 text-align:left ;
 letter-spacing:0.02em;
 color:$colortext ;
+transition: $transition-color;
+
 
 }
 
@@ -132,6 +136,8 @@ font-weight: 500;
  line-height:1.17;
  letter-spacing:0.02em;
  color:$coloraccent;
+transition: $transition-color;
+
 }
 
 .menu-contakt-link:not(:last-child){
@@ -158,8 +164,8 @@ padding-right: 40px;
 
 .menu-net{
      border-right: 1px solid $colorinputborder;
-     padding-right: 10px;  
- 
+      padding-right: 10px;  
+    
  }
  
   
@@ -171,21 +177,23 @@ padding-right: 40px;
     
    letter-spacing:0.02em;
    color:$coloraccent ;
-   position: relative;
+    transition: $transition-color;
  
 }
 
 
  
-//   .net-link::after{
-//   content:'';
+//    .menu-net:nth-child(n+2)::after{
+//    content:'';
+//    position: absolute;
 //   display:block;
-//   height:0px;
-//  width:20px ;
-//   color:$colorinputborder;
-//  position: absolute;
-//   }
+//   height:1px;
+//   width:20px ;
+//   top:90%;
+//   left:-10%;
+//   background-color:$colorinputborder;
+//   position: absolute;
+//   transform: rotate(-90%);
+//   transform-origin: bottom left;
+//    }
 
-//   .menu-social{
-//     position: relative;
-//   }
