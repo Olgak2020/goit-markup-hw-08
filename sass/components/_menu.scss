@@ -8,11 +8,13 @@
     background-color: $colortitleprimary;
     transform: translateX(100%);
     z-index:1 ;
+    transition:$transition-transform ;
     
 }
 
 .menu-container.is-open {
     transform: translateX(0);
+
 }
 
 
@@ -66,8 +68,12 @@
 
  .menu-tuggle.is-close-menu:hover,
  .menu-tuggle.is-close-menu:focus{
+  
     color:$coloraccent ;
+
  }
+
+ 
 .menu-tuggle.is-open-menu:hover,
 .menu-tuggle.is-open-menu:focus {
     color: $coloraccent ;

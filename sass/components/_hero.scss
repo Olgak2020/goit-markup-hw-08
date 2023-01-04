@@ -2,8 +2,15 @@
         background-color:$colorbgsecondary ;
         max-width: 1600px;
         height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding:118px 0 ;
+
         background-image: linear-gradient($colorbackdrop,
             $colorbgimage, $colorbgimage),
+
         url('../images/imgmob1x.jpg');
 
         @media (min-device-pixel-ratio: 2),
@@ -16,13 +23,7 @@
         url('../images/imgmob2x.jpg');
               
                 }
-           
-           background-repeat: no-repeat;
-           background-size: cover;
-           background-position: center;
-           text-align: center;
-           padding:118px 0 ;
-  
+               
 
    @media screen  and(min-width:768px){
 
