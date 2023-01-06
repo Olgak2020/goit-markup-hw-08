@@ -493,6 +493,12 @@ img {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .contakt__authinfo {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 .contakt__authinfo:hover, .contakt__authinfo:focus {
   color: #2196F3;
 }
@@ -1152,7 +1158,7 @@ img {
   .project {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: normal;
     justify-content: flex-start;
   }
 }
@@ -1216,11 +1222,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .project__card {
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
-    height: 100%;
-    width: 100%;
   }
 }
 .project__title {
