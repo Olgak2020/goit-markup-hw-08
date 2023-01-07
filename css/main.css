@@ -310,7 +310,7 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -677,7 +677,7 @@ img {
     flex-basis: 50%;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .team__team-list {
     flex-wrap: nowrap;
     flex-basis: 25%;
